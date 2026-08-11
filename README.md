@@ -23,10 +23,8 @@ MADAR is a web-based learning interface designed to bring key learning informati
 | [Vite](https://vite.dev/) | Development server and build tooling |
 | [JavaScript / JSX](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | Application code |
 | [Bootstrap](https://getbootstrap.com/) | Responsive layout and UI utilities |
-| [Lucide React](https://lucide.dev/) | Interface icons |
-| [Supabase](https://supabase.com/) | Backend and data services |
+| [Lucide React](https://lucide.dev/) | Interface icons |services |
 | [ESLint](https://eslint.org/) | Code quality and linting |
-| [TypeScript](https://www.typescriptlang.org/) | Type checking and project tooling |
 
 ## 📁 Project Structure
 
@@ -92,22 +90,6 @@ Vite will start the local development server and provide a URL to open the appli
 | `npm run build` | Create a production build |
 | `npm run preview` | Preview the production build locally |
 | `npm run lint` | Run ESLint |
-| `npm run typecheck` | Run TypeScript type checking |
-
-## 🔐 Environment Variables
-
-If you connect MADAR to a Supabase project, keep credentials in environment variables rather than committing secrets to the repository.
-
-For a Vite application, environment variables intended for client-side use normally use the `VITE_` prefix.
-
-Example:
-
-```env
-VITE_SUPABASE_URL=your_supabase_project_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-> Never commit private keys, passwords, service-role keys, or other sensitive credentials to source control.
 
 ## 🧩 Architecture
 
@@ -133,8 +115,6 @@ The project currently has a deployed version available at:
 Before opening a pull request or publishing a significant change, it is recommended to run:
 
 ```bash
-npm run lint
-npm run typecheck
 npm run build
 ```
 
@@ -166,7 +146,3 @@ If you intend to open-source MADAR for reuse, consider adding an appropriate lic
 **Abdullah Sameh**
 
 GitHub: https://github.com/AbdullahSameh10
-
----
-
-Made with care for the MADAR project.
